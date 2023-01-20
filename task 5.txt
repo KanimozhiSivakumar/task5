@@ -1,0 +1,74 @@
+				DAY 5 TASK
+
+
+1.PRINT THE ODD NUMBER(simple function )
+
+var a = [12,13,14,15,16,17];
+var result=[];
+function arr()
+{
+    for(var i=0;i<a.length;i++)
+    {
+        if(a[i]%2!=0)
+        result.push(a[i]);
+    }
+    return result;
+}
+console.log(result);
+
+arr();
+
+OUTPUT
+0: 13
+1: 15
+2: 17
+length: 3
+Print the odd number using iife function
+//print the odd number of array elements using iife function
+
+( function odd(arr){
+    var result =[];
+          for(var i=0;i<arr.length;i++){
+              if(arr[i]%2!=0){
+                 result.push(arr[i]);
+              }
+          }
+        console.log (result);
+      }  )([12,13,14,15,17,19,21])
+OUTPUT
+
+(5) [13, 15, 17, 19, 21]
+0: 13
+1: 15
+2: 17
+3: 19
+4: 21
+length: 5
+
+PRINTING THE ODD NUMBER USING ARROW FUNCTION
+
+var odd = (arr)=>{
+    var result =[];
+        for(var i=0;i<arr.length;i++){
+            if(arr[i]%2!=0){
+               result.push(arr[i]);
+            }
+        }
+        return result;
+}
+console.log(odd([12,13,14,15,17,19,21]))
+
+OUTPUT
+
+(5) [13, 15, 17, 19, 21]
+0: 13
+1: 15
+2: 17
+3: 19
+4: 21
+length: 5
+
+
+
+
+
